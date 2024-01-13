@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas Template SW</title>
+<link rel= 'stylesheet' href = "styles.css">
+<style>
+
+  header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #myCanvas {    
+    /* Expand to fill remaining space */
+    flex-grow: 1; 
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Its A Blank Canvas</h1>
+
+</header>
+
+<canvas id="myCanvas"></canvas>
+
+<script>
+// Reference to the canvas element
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+// Fills the canvas with black (already set in CSS, but here for clarity)
+ctx.fillStyle = "black";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// Add your other canvas drawing code here! 
+// Hope You Enjoy the Template
+</script>
+
+</body>
+</html>
+
+
